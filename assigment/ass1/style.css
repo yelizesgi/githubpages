@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+header {
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 0.5;
+  text-align: center;
+  margin: 15px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav .button a {
+  color: white;
+  text-decoration: none;
+  background-color: chocolate;
+  border-radius: 8px;
+  margin: 3px;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+nav .button a:hover {
+  background-color: darkgray;
+}
+
+.par {
+  color: white;
+  text-align: center;
+  text-shadow: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  margin: 20px;
+  padding: 5px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project #my-project {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+
+  margin: 8px;
+}
+
+.project img {
+  border-radius: 20px;
+  width: 200px;
+  height: 300px;
+  margin: 2px;
+  padding: 3px;
+}
+
+.project img:hover {
+  opacity: 0.5;
+}
+
+.contact {
+  text-align: center;
+}
+
+#contact-me {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding: 20px;
+}
+
+.contact a {
+  color: rgb(122, 79, 21);
+  text-decoration: none;
+  margin: 10px;
+}
+
+.contact a:hover {
+  color: tomato;
+}
+
+footer {
+  text-align: center;
+}
+
+.sendmessage label {
+  color: white;
+}
+
+.sendmessage input {
+  background-color: black;
+  border: 1px solid chocolate;
+  width: 400px;
+  margin: 2px;
+  text-align: center;
+  outline-color: chocolate;
+}
+
+.sendmessage textarea {
+  background-color: black;
+  border: 1px solid chocolate;
+  width: 400px;
+  margin: 2px;
+  text-align: center;
+  outline-color: chocolate;
+}
+
+.sendbutton input {
+  color: rgb(85, 74, 74);
+  background-color: chocolate;
+  border: 1px solid chocolate;
+  outline-color: chocolate;
+  width: 400px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.sendbutton a {
+  color: rgb(78, 72, 72);
+  font-weight: bold;
+  background-color: chocolate;
+  padding: 5px;
+  width: 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  float: right;
+}
+
+/* font-family: 'Roboto', sans-serif; ptagı */
