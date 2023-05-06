@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#a15151, #5b62af);
+  text-align: center;
+}
+
+header {
+  color: rgba(231, 217, 217, 0.8);
+  font-family: "Sigmar", cursive;
+  font-size: 48px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px black;
+  margin: 10px;
+  padding: 7px;
+}
+
+#container {
+  background: linear-gradient(#472525, #23274b);
+  width: 100rem;
+  margin: auto;
+}
+
+img {
+  width: 20rem;
+  margin: 10px;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 20px;
+  float: left;
+}
+
+.box {
+  display: inline-block;
+  width: 80rem;
+  color: rgb(165, 155, 155);
+  background-color: #a36666;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-family: "Mukta", sans-serif;
+  font-size: 15px;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 7px 7px rgb(201, 136, 149);
+  cursor: pointer;
+}
+
+.box:hover {
+  opacity: 0.9;
+}
+
+div > h2 {
+  color: antiquewhite;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+p {
+  color: antiquewhite;
+  /* text-align: justify; */
+}
+
+.button {
+  float: right;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: rgb(192, 99, 99);
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: deeppink;
+  background-color: bisque;
+}
