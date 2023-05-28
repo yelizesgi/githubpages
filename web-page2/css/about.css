@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #35424a;
+    height: 100vh;
+  }
+  
+  .navbar {
+    border-bottom: 2px solid rgb(201, 86, 161);
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 2vw;
+    width: 100vw;
+  
+  }
+  
+  header {
+    font-size: 2rem;
+  }
+  
+  span {
+    color: rgb(201, 86, 161);
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav > a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  nav > a:hover {
+    color: rgb(201, 86, 161);
+  }
+
