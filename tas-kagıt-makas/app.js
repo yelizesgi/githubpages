@@ -103,6 +103,7 @@ const youWin = () => {
     messagePar.textContent = "You Win"
     scoreCardSection.style.color = GREEN
     messagePar.style.backgroundColor = GREEN
+    yourScoreSpan.textContent++
 }
 
 
