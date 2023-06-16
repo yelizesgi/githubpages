@@ -41,7 +41,7 @@ const renderNews = (news) => {
             <div class="card-body">
               <h5 class="card-title">${title}</h5>
               <p class="card-text">${content}</p>
-              <a href="${url}" target="_blank" class="btn btn-info">Go Detail</a>
+              <a href="${url}" target="_blank" class="btn btn-info text-white">Go Detail</a>
             </div>
           </div>
       </div>
