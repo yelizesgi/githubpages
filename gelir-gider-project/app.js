@@ -1,7 +1,7 @@
 //!Selectors
 const ekleBtn = document.getElementById("ekle-btn")
 const gelirInput = document.getElementById("gelir-input")
-const ekleFormu = document.getElementById("ekle-formu")
+const ekleFormu = document.getElementById("ekle-form")
 
 //?Sonuctablosu
 const gelirinizTd = document.getElementById("geliriniz")
@@ -44,7 +44,7 @@ ekleFormu.addEventListener("submit", (e) =>{
 window.addEventListener("load", () =>{
     gelirler = Number(localStorage.getItem("gelirler"))
     harcamaListesi = JSON.parse(localStorage.getItem("harcamalar")) || []
-    harcamaListesi.forEach((harcama) => harcamayiDomYaz())
+    harcamaListesi.forEach((harcama) => harcamayiDomaYaz(harcama))
     console.log(harcamaListesi)
     tarihInput.valueAsDate = new Date()
     hesaplaVeGuncelle()
@@ -62,7 +62,7 @@ harcamaFormu.addEventListener("submit", (e) => {
     }
     harcamaListesi.push(yeniHarcama)
     localStorage.setItem("harcamalar", JSON.stringify(harcamaListesi))
-    harcamayiDomYaz(yeniHarcama)
+    harcamayiDomaYaz(yeniHarcama)
     hesaplaVeGuncelle()
     harcamaFormu.reset()
     tarihInput.valueAsDate = new Date()
@@ -75,16 +75,17 @@ const hesaplaVeGuncelle = () => {
     kalanTd.innerText = gelirler -giderler
 }
 //?Girilen bilgilerin ekranda gösterilmesini sağlayan event
-const harcamayiDomYaz = ({id, miktar, tarih, alan}) => {
-    harcamaBody.innerHtml += `
+const harcamayiDomaYaz = ({ id, miktar, tarih, alan }) => {
+    // const { id, miktar, tarih, alan } = yeniHarcama
+    harcamaBody.innerHTML += `
     <tr>
-       <td>${tarih}</td>
-       <td>${alan}</td>
-       <td>${miktar}</td>
-       <td><i${id} class="fa-solid fa-square-xmark text-info" type= "button"></i></td>
+      <td>${tarih}</td>
+      <td>${alan}</td>
+      <td>${miktar}</td>
+      <td><i id=${id} class="fa-solid fa-trash-can text-info"  type="button"></i></td>
     </tr>
     `
-}
+  }
 
 //?harcama tablosunda herhangi bir alana tıklanıldığnıda tetiklenecek event
  harcamaBody.addEventListener("click", (e) =>{
