@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav{
+    padding: 0.5rem 1rem;
+}
+
+ul.nav-list{
+    display: flex;
+    padding: 0rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-list-text{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-list-btn{
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.main-product-preview{
+    padding: 2rem;
+    width: 75%;
+}
+
+.main-product-painel{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title{
+    padding: 1.2rem 0.5rem;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+}
+
+.main-figure{
+    width: 104px;
+    height: 104px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.main-img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-product-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.main-product-info-title{
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.main-product-price-text strong{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-action{
+    width: 100%;
+    display: flex;
+}
+
+.main-action-btn{
+    display: flex;
+    align-items: center;
+}
+
+.main-quantity-controller{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
