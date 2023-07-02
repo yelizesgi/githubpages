@@ -105,6 +105,140 @@ ul.nav-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    height: 32px;
+    width: 89px;
 }
 
+.main-quantity-controller-text {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .main-product-removal {
+    margin-left: 0.5rem;
+  }
+  .main-product-removal-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: #ffefe5;
+    cursor: pointer;
+  }
+  .main-product-removal-btn i:hover {
+    color: white;
+    border-radius: 50%;
+    background-color: #ff7623;
+  }
+  
+  .main-product-line-price {
+    font-weight: bold;
+  }
+  
+  .main-total {
+    padding: 2rem;
+    width: 23%;
+  }
+  .main-summary {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #bdbdbd;
+    background-color: #ffffff;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    border-radius: 0.5rem;
+  }
+  .main-summary-responsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+  }
+  .main-sum-price {
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  .main-sum-title {
+    color: orangered;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  
+  .main-order-btn {
+    background-color: orangered;
+    border: none;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+  }
+  .main-summary-info {
+    display: flex;
+    justify-content: space-between;
+    color: #646464;
+  }
+  /* Genel */
+  .line-through {
+    text-decoration: line-through;
+  }
+  i {
+    color: #ff7623;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .main-quantity-controller i:hover {
+    background-color: #ffefe5;
+    border-radius: 50%;
+  }
+  span {
+    cursor: pointer;
+  }
+  .dollar::after {
+    content: " $";
+  }
+  
+  @media only screen and (max-width: 1150px) {
+    .nav-list {
+      padding: 0rem 1rem;
+    }
+    .main {
+      display: block;
+      margin: auto;
+      position: relative;
+    }
+    .main-products-preview {
+      width: 100%;
+    }
+    .main-total {
+      width: 100%;
+      position: sticky;
+      bottom: 0;
+    }
+    .main-summary {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 25vh;
+    }
+    .main-summary-responsive {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .main-order-btn {
+      width: 25%;
+      margin: 0;
+    }
+    #total-info {
+      width: 100%;
+    }
+  
+    .main-summary-info {
+      width: 100%;
+    }
+  }

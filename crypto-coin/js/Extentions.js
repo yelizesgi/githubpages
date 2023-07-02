@@ -1,7 +1,7 @@
 ﻿function EncryptStringAES(text) {
     if (text != null) {
-        var key = CryptoJS.enc.Utf8.parse('8080808080808080');
-        var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+        var key = CryptoJS.enc.Utf8.parse('coinranking30e252f11e6a42ab9c9cce0cf7a8eaa9e5a75a462e1f40b9');
+        var iv = CryptoJS.enc.Utf8.parse('coinranking30e252f11e6a42ab9c9cce0cf7a8eaa9e5a75a462e1f40b9');
 
         var encryptedstr = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(text), key,
             {
@@ -20,8 +20,8 @@
 
 function DecryptStringAES(text) {
     if (text != null) {
-        var key = CryptoJS.enc.Utf8.parse('8080808080808080');
-        var iv = CryptoJS.enc.Utf8.parse('8080808080808080');
+        var key = CryptoJS.enc.Utf8.parse('coinranking30e252f11e6a42ab9c9cce0cf7a8eaa9e5a75a462e1f40b9');
+        var iv = CryptoJS.enc.Utf8.parse('coinranking30e252f11e6a42ab9c9cce0cf7a8eaa9e5a75a462e1f40b9');
 
         const crypted = CryptoJS.enc.Base64.parse(text);
 
