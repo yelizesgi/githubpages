@@ -2,6 +2,7 @@ const Event = () =>{
     
     const color = [, "#3C9EE7", "#E7993C",
     "#E73C99", "#3CE746", "#E7993C"];
+    console.log(color)
 
 
     const handleRandomColor = (e) =>{
@@ -14,5 +15,7 @@ const Event = () =>{
         </div>
     )
 }
+
+
 
 export default Event
