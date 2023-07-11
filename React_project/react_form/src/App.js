@@ -1,7 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Form from './component/Form'
+
+
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello React</h1>
+      <Form/>
     </div>
   )
 }

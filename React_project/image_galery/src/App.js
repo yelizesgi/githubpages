@@ -1,7 +1,11 @@
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Homepage from './pages/Homepage'
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello React</h1>
+      <Homepage/>
     </div>
   )
 }
