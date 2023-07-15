@@ -2,7 +2,7 @@ export const data = [
     {
       name: "AGTE",
       img: "https://cdn.pixabay.com/photo/2017/12/13/16/01/brain-3017071_640.png",
-      statistics: [
+      information: [
         "📝Bilişsel Gelişim",
         "💕Duygusal Gelişim",
         "💃🕺Sosyal Gelişim",
@@ -11,8 +11,8 @@ export const data = [
     },
     {
       name: "Bender Gestalt",
-      img: "https://cdn.pixabay.com/photo/2018/11/20/08/47/children-3826830_640.jpg",
-      statistics: [
+      img: "https://cdn.pixabay.com/photo/2018/02/05/10/03/human-3131802_640.jpg",
+      information: [
         "🦻Alıcı Dil",
         "🗣️İfade Edici Dil",
         "🎯Odaklanma",
@@ -21,8 +21,8 @@ export const data = [
     },
     {
       name: "Frankfurter-Konsantrasyon",
-      img: "https://cdn.pixabay.com/photo/2018/02/05/10/03/human-3131802_640.jpg",
-      statistics: [
+      img: "https://cdn.pixabay.com/photo/2018/11/20/08/47/children-3826830_640.jpg",
+      information: [
         "🎯Odaklanma",
         "🔍Konsantrasyon",
         "📉Strateji",
@@ -32,7 +32,7 @@ export const data = [
     {
       name: "Goodenough",
       img: "https://cdn.pixabay.com/photo/2023/05/13/13/09/street-art-7990475_640.jpg",
-      statistics: [
+      information: [
         "💃Kadın Resmi",
         "🕺Erkek Resmi",
         "📝Ayrıntılı Puanlama",
@@ -42,7 +42,7 @@ export const data = [
     {
       name: "Gesell Gelişim Figürleri",
       img: "https://cdn.pixabay.com/photo/2013/08/06/22/40/geometric-solids-170377_640.jpg",
-      statistics: [
+      information: [
         "🏃‍♀️Motor Beceri",
         "🎭Kopya Etme",
         "🔤İnce Motor Beceri",
@@ -51,8 +51,8 @@ export const data = [
     },
     {
       name: "Kent Porteus",
-      img: "https://cdn.pixabay.com/photo/2017/05/13/09/04/question-mark-2309040_640.jpg",
-      statistics: [
+      img: "https://cdn.pixabay.com/photo/2017/07/10/23/43/question-mark-2492009_1280.jpg",
+      information: [
         "🦻Alıcı Dil",
         "🗣️İfade Edici Dil",
         "📝Bilişsel Gelişim",
@@ -61,8 +61,8 @@ export const data = [
     },
     {
       name: "Metropolitan(Okul Olgunluğu Testi)",
-      img: "https://cdn.artphotolimited.com/images/60913d60bd40b85323893a87/1000x1000/hakeem-olajuwon-von-den-houston-rockets.jpg",
-      statistics: [
+      img: "https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_640.jpg",
+      information: [
         "🦻Alıcı Dil",
         "🗣️İfade Edici Dil",
         "📝Bilişsel Gelişim",
@@ -70,22 +70,13 @@ export const data = [
       ],
     },
     {
-      name: "Shaquille O'Neal",
-      img: "https://staticg.sportskeeda.com/editor/2018/10/6bb16-15398694878129-800.jpg",
-      statistics: [
-        "28,596 points",
-        "13,099 rebaunds",
-        "3,026 assist",
-        "15 All Star",
+      name: "Peabody",
+      img: "https://cdn.pixabay.com/photo/2021/08/31/09/42/hedgehog-6588349_640.jpg",
+      information: [
+        "🦻Alıcı Dil",
+        "🗣️İfade Edici Dil",
+        "📝Bilişsel Gelişim",
+        "🎯Odaklanma",
       ],
     },
-    {
-      name: "Scottie Pippen",
-      img: "https://basketballforever.com/wp-content/uploads/2020/04/Scottie-Pippen-Chicago-Bulls.jpg",
-      statistics: [
-        "18,940 points",
-        "7,494 rebaunds",
-        "6,135 assist",
-        "7 All Star",
-      ],
-    }]
+]
