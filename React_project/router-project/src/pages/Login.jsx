@@ -11,7 +11,7 @@ const Login = ({setUser}) => {
         e.preventDefault();
         setUser({email, password});
         sessionStorage.setItem("user", JSON.stringify({email,password}));
-        navigate("/");
+        // navigate("-1");
         console.log(email, password)
     }
 
@@ -42,7 +42,7 @@ const Login = ({setUser}) => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" onClick={() => navigate("-1")}>
           Submit
         </button>
       </form>

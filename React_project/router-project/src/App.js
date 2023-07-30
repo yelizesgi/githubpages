@@ -23,7 +23,7 @@ function App() {
     <Navs/>
     <Routes>
      <Route  path="/" element={<Home/>}>
-      <Route index  element={<About/>}/>
+      <Route  element={<About/>}/>
       <Route  path="/certificate" element={<Certificate/>}/>
      </Route>
      <Route element={<PrivateRouter user={user}/>}>

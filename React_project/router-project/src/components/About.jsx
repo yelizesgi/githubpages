@@ -5,7 +5,7 @@ const About = () => {
 
 
     return(
-        <article className="container p-3 bg-light">
+        <article className="container p-3 bg-light mt-3">
           <h1 className="text-center text-success">ABOUT US</h1>
           <div className="row text-center d-flex justify-content-center text-success ">
             <div className="col-sm-12 col-md-6 col-lg-4">
