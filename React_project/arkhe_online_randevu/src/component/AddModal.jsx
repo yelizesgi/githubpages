@@ -15,6 +15,7 @@ const handleSubmit = (e) => {
         {
             id: new Date().getTime(),
             patient: name,
+            day: date,
             consulted: false,
             consulmen: dnName
         },
@@ -58,7 +59,7 @@ const handleSubmit = (e) => {
             </Form.Group>
 
             <div className="text-center">
-              <Button variant="success" type="submit" className="me-2">
+              <Button variant="success" type="submit" className="me-2" onClick={handleSubmit}>
                 Kaydet
               </Button>
               <Button variant="danger" onClick={handleClose}>

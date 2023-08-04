@@ -12,7 +12,7 @@ const Home = () => {
         <main className="text-center mt-2">
             <h1 className="display-5 text-success">ARKHE AİLE DANIŞMANLIK MERKEZİ</h1>
         <Consulmen apps={appointments} setApps={setAppointments}/>
-        <AppointmentList/>  
+        <AppointmentList apps={appointments} setApps={setAppointments}/>  
         </main>
     )
 }

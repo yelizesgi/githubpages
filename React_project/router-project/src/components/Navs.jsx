@@ -29,13 +29,13 @@ const Navs = () =>{
               </li>
   
               <li className="nav-item">
-                <Link to="/people" className="nav-link text-success fs-4" aria-current="page">
+                <Link to="/consulmen" className="nav-link text-success fs-4" aria-current="page">
                   Consulmen
                 </Link>
               </li>
   
               <li className="nav-item">
-                <Link to="/paths" className="nav-link text-success fs-4" aria-current="page">
+                <Link to="/certificate" className="nav-link text-success fs-4" aria-current="page">
                 Certificate
                 </Link>
               </li>
