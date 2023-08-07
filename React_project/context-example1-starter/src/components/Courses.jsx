@@ -26,7 +26,7 @@ const data = [
 ];
 const Courses = () => {
   return (
-    <Container className="text-center mt-4 p-4">
+    <Container className="text-center mt-4 p-4 text-success">
       <h1>Our Schools</h1>
       <Row className="justify-content-center gap-4 align-items-center mt-4">
         {data.map((course) => {

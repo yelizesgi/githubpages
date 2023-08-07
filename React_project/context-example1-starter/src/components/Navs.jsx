@@ -3,8 +3,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
+import { useContext } from "react";
+import { LoginContext } from "../context/LoginContext";
+import logoResim from "../images/resim.png"
 
 function Navs() {
+  const {user, setUser} = useContext(LoginContext)
   return (
     <Navbar expand="md">
       <Container>
@@ -12,14 +16,14 @@ function Navs() {
           <Link className="nav-link" to="/">
             <Image
               width={"200px"}
-              src="https://clarusway.com/wp-content/uploads/2022/02/Adsiz-tasarim-4-1024x265.png"
+              src= {logoResim}
               alt="logo"
             />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto text-success">
             <Link className="nav-link" to="/">
               Home
             </Link>
@@ -29,9 +33,19 @@ function Navs() {
             <Link className="nav-link" to="/people">
               People
             </Link>
-            <Link className="nav-link" to="/login">
-              Login
-            </Link>
+            {user.email && user.password ? (
+              <Link
+                className="nav-link"
+                to="/login"
+                onClick={() => setUser({ email: "", password: "" })}
+              >
+                Logout
+              </Link>
+            ) : (
+              <Link className="nav-link" to="/login">
+                Login
+              </Link>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
