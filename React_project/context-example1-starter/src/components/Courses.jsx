@@ -38,7 +38,7 @@ const Courses = () => {
                 <Card.Body>
                   <Card.Title>{name}</Card.Title>
                   <Card.Text>{text}</Card.Text>
-                  <Button variant="danger">Detail</Button>
+                  <Button variant="success">Detail</Button>
                 </Card.Body>
               </Card>
             </Col>

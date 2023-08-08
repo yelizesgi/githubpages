@@ -21,10 +21,10 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
 
-        <Route path="people" element={<PrivateRouter />} />
+        <Route path="people" element={<PrivateRouter />}>
         <Route path="" element={<People />} />
         <Route path=":id" element={<PersonDetail />} />
-
+        </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
