@@ -7,7 +7,7 @@ import { useState } from "react"
 
 const Home = () => {
   const [appointments, setAppointments] = useState(appointmentData)
-
+    console.log(appointments)
     return(
         <main className="text-center mt-2">
             <h1 className="display-5 text-success">ARKHE AİLE DANIŞMANLIK MERKEZİ</h1>

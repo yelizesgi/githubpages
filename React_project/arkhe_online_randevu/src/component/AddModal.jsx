@@ -59,7 +59,7 @@ const handleSubmit = (e) => {
             </Form.Group>
 
             <div className="text-center">
-              <Button variant="success" type="submit" className="me-2" onClick={handleSubmit}>
+              <Button variant="success" type="submit" className="me-2" >
                 Kaydet
               </Button>
               <Button variant="danger" onClick={handleClose}>

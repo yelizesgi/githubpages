@@ -11,7 +11,7 @@ const Login = ({setUser}) => {
         e.preventDefault();
         setUser({email, password});
         sessionStorage.setItem("user", JSON.stringify({email,password}));
-        // navigate("-1");
+        navigate("/");
         console.log(email, password)
     }
 

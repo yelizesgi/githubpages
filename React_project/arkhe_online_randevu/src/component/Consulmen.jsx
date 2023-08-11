@@ -1,5 +1,5 @@
 import Container from "react-bootstrap/Container"
-import { consulmenData, doctorData } from "../helper/data"
+import { consulmenData } from "../helper/data"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import AddModal from "./AddModal"
