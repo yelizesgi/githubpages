@@ -4,13 +4,13 @@ import Form from "react-bootstrap/Form"
 import { useState } from "react"
 
 
-const AddModal = ({show, handleClose, apps, SetApps, dnName}) => {
+const AddModal = ({show, handleClose, apps, setApps, dnName}) => {
 const [name, setName] = useState("")
 const [date, setDate] = useState(new Date().toISOString().slice(0, 10))
 
 const handleSubmit = (e) => {
     e.preventDefault()
-    SetApps([
+    setApps([
         ...apps, 
         {
             id: new Date().getTime(),

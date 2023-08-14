@@ -16,7 +16,7 @@ const Consulmen = () => {
 
    useEffect(() => {
     getConsulmen();
-   }, [id]);
+   }, []);
    
     return(
         <div className="container text-center mt-4">

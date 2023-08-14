@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
-import spinner from "../img/"
+import spinner from "../img/Spinner-2.gif"
 import { useNavigate, useParams } from "react-router-dom";
 import NotFound from "./NotFound";
 
