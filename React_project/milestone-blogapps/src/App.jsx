@@ -1,8 +1,10 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import AppRouter from "./router/AppRouter";
+
 import { Provider } from "react-redux";
 import store from "./app/store";
 import { ToastContainer } from "react-toastify";
+import AppRouters from "./routers/AppRouter";
+
 
 function App() {
   const theme = createTheme({
@@ -19,7 +21,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Provider store={store}>
-          <AppRouter />
+          <AppRouters />
         </Provider>
         <ToastContainer />
       </ThemeProvider>

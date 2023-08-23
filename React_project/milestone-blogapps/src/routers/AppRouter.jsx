@@ -1,4 +1,4 @@
-import {BrowserRouters, Routes, Route} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 
 import SignUp from "../pages/SignUp"
@@ -8,15 +8,15 @@ import Dashboard from "../pages/Dashboard"
 
 const AppRouters = () => {
   return (
-    <BrowserRouters>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="signup" element={<SignUp/>}/>
-        <Route path="stock" element={<PrivateRouter/>}>
+        <Route path="milestone" element={<PrivateRouter/>}>
           <Route path="" element={<Dashboard/>}/>
         </Route>
       </Routes>
-    </BrowserRouters>
+    </BrowserRouter>
   )
 }
 

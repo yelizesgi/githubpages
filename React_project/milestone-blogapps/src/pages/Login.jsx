@@ -5,10 +5,14 @@ import Grid from "@mui/material/Grid"
 import Typography from "@mui/material/Typography"
 import {Formik, Form} from "formik"
 import {string, object} from "yup"
+import useAuthCall from "../hooks/useAuthCall"
 
-import React from 'react'
+
 
 const Login = () => {
+const {login} = useAuthCall()
+
+
 const loginSchema = object({
   email:string().email("Lütfen valid bir email giriniz").required("Bu alanın doldurulması zorunludur"),
   password: string()
@@ -62,14 +66,14 @@ const loginSchema = object({
           </Typography>
           <Formik
           initialValues={{email:"", password:""}}
-          validationSchema={handleSchema}
+          validationSchema={loginSchema}
           onSubmit={(values, action)=>{
-            //todo
+            login(values)
             action.resetForm()
             action.setSubmitting(false)
           }}
           >
-          {({handleChange,handleBlur,touched,values})=>(
+          {({handleChange,handleBlur,touched,values,errors})=>(
             <Form>
               <Box
             sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -83,7 +87,7 @@ const loginSchema = object({
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.email}
-              error={touched.email && Blooean(error.email)}
+              error={touched.email && Blooean(errors.email)}
               helperText={errors.email}
             />
             <TextField
@@ -113,9 +117,9 @@ const loginSchema = object({
           </Box>
         </Grid>
 
-        <Grid item xs={10} sm={7} md={6}>
+        <Grid item xs={10} sm={7} md={6} >
           <Container>
-            <img src={image} alt="img" />
+            <img src={image} alt="img" width="200px"/>
           </Container>
         </Grid>
       </Grid>
