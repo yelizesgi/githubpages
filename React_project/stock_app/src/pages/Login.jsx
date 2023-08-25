@@ -10,9 +10,11 @@ import TextField from "@mui/material/TextField"
 import { Button } from "@mui/material"
 import {Formik, Form} from "formik"
 import {object, string} from "yup"
+import useAuthCall from "../hooks/useAuthCall"
 
 const Login = () => {
   const navigate = useNavigate()
+  const {login} = useAuthCall()
 
   const loginSchema = object({
     email:string()
@@ -68,10 +70,10 @@ const Login = () => {
           initialValues={{email:"", password:""}}
           validationSchema={loginSchema}
           onSubmit={(values, action)=>{
-            //Todo
+            login(values)
             action.resetForm()
             action.setSubmitting()
-          }}>{({handleChange, handleBlur,values, touched})=>(
+          }}>{({handleChange, handleBlur,values, touched, errors})=>(
             <Form>
              <Box
             sx={{ display: "flex", flexDirection: "column", gap: 2 }}
@@ -85,7 +87,7 @@ const Login = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.email}
-              error={TouchAppRounded.email && Boolean(errors.email)}
+              error={touched.email && Boolean(errors.email)}
               helperText={errors.email}
             />
             <TextField
@@ -97,7 +99,7 @@ const Login = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.password}
-              error={TouchAppRounded.password && Boolean(errors.password)}
+              error={touched.password && Boolean(errors.password)}
               helperText={errors.password}
             />
             <Button variant="contained" type="submit">

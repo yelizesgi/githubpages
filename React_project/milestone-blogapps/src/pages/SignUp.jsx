@@ -6,7 +6,7 @@ import image from "../assets/loginpage.jpg"
 import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
 import { Link } from "react-router-dom"
-import SignUpForm, { signUpSchema } from "../components/SignUpForm"
+import SignUpForm from "../components/SignUpForm"
 import { Formik } from "formik"
 import useAuthCall from "../hooks/useAuthCall"
 
@@ -73,7 +73,7 @@ const SignUp = () => {
           </Box>
         </Grid>
 
-        <Grid item xs={0} sm={7} md={6}>
+        <Grid item xs={0} sm={7} md={6} >
           <Container>
             <img src={image} alt="" />
           </Container>

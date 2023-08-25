@@ -41,7 +41,7 @@ const useAuthCall =() =>{
     const signUp = async (userData) => {
         dispatch(fetchStart())
         try {
-            const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/users/register/`, userData)
+            const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/account/register/`, userData)
             dispatch(logoutSuccess(data))
             toastSuccessNotify("signup işlemi başarılı olmuştur")
             navigate("/")
