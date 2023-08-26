@@ -16,7 +16,7 @@ const useAuthCall = () =>{
         const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/account/auth/login/`, userData)
         dispatch(loginSuccess(data))
         toastSuccessNotify("login islemi basarili")
-        navigete("/milestone")
+        navigete("/stock")
     } catch (error) {
         console.log(error.message)
         dispatch(fetchFail())
@@ -31,7 +31,7 @@ const useAuthCall = () =>{
         await axios.post(`${import.meta.env.VITE_BASE_URL}/account/auth/logout/`)
         dispatch(logoutSuccess())
         toastSuccessNotify("logout islemi basarili")
-        navigete("/milestone")
+        navigete("/")
     } catch (error) {
         console.log(error.message)
         dispatch(fetchFail())
@@ -39,14 +39,14 @@ const useAuthCall = () =>{
     }
    }
 
-   const register = async () =>{
+   const register = async (userData) =>{
 
     dispatch(fetchStart())
     try {
-        await axios.post(`${import.meta.env.VITE_BASE_URL}/account/register/`)
-        dispatch(registerSuccess())
+        const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/account/register/`, userData)
+        dispatch(registerSuccess(data))
         toastSuccessNotify("register islemi basarili")
-        navigete("/milestone")
+        navigete("/stock")
     } catch (error) {
         console.log(error.message)
         dispatch(fetchFail())

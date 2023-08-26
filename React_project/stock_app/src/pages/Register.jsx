@@ -11,8 +11,6 @@ import { Link} from "react-router-dom"
 import useAuthCall from "../hooks/useAuthCall"
 
 
-import { Formik } from "formik"
-
 const Register = () => {
   const {register} = useAuthCall()
 
@@ -54,8 +52,8 @@ const Register = () => {
             Register
           </Typography>
 
-         <Formik>
-          initialValues={{
+         <Formik 
+         initialValues={{
             username: "",
             first_name: "",
             last_name: "",
@@ -68,7 +66,7 @@ const Register = () => {
             actions.resetForm()
             actions.setSubmitting(false)
           }}
-          component={(props) => <RegisterForm {...props}/>}
+          component={(props) => <RegisterForm {...props}/>}>
          </Formik>
 
           <Box sx={{ textAlign: "center", mt: 2 }}>
@@ -76,9 +74,9 @@ const Register = () => {
           </Box>
         </Grid>
 
-        <Grid item xs={0} sm={7} md={6}>
+        <Grid item xs={0} sm={7} md={6} >
           <Container>
-            <img src={image} alt="" />
+            <img src={image} alt=""  width="200px"/>
           </Container>
         </Grid>
       </Grid>
