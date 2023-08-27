@@ -72,7 +72,7 @@ const Login = () => {
           onSubmit={(values, action)=>{
             login(values)
             action.resetForm()
-            action.setSubmitting()
+            action.setSubmitting(false)
           }}>{({handleChange, handleBlur,values, touched, errors})=>(
             <Form>
              <Box

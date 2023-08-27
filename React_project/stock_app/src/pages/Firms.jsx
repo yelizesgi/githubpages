@@ -1,8 +1,16 @@
-import React from 'react'
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 const Firms = () => {
   return (
-    <div>Firms</div>
+    <div>
+      <Typography variant='h3' color={"#ff4081"} mb={3}>
+        Firms
+      </Typography>
+      <Button variant='contained'>
+        NEW FIRMS
+      </Button>
+    </div>
   )
 }
 
