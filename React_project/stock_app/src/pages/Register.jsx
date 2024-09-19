@@ -32,7 +32,7 @@ const Register = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={12} sm={10} md={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <Avatar
             sx={{
               backgroundColor: "secondary.light",
@@ -74,8 +74,8 @@ const Register = () => {
           </Box>
         </Grid>
 
-        <Grid item xs={0} sm={7} md={6} >
-          <Container>
+        <Grid item xs={0} sm={7} md={6} lg={12} >
+          <Container sx={{textAlign:"center"}}>
             <img src={image} alt=""  width="200px"/>
           </Container>
         </Grid>

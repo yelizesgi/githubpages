@@ -20,7 +20,7 @@ const useAuthCall = () =>{
     } catch (error) {
         console.log(error.message)
         dispatch(fetchFail())
-        toastErrorNotify("login islemi basarili")
+        toastErrorNotify("login islemi basarisiz")
     }
    }
 
